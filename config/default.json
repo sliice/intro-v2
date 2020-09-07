@@ -1,0 +1,6 @@
+{
+  "port": 5000,
+  "jwtKEY": "8911",
+  "URI": "mongodb://localhost:27017/intro",
+  "baseURL": "http://localhost:5000"
+}

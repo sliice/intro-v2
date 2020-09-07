@@ -1,0 +1,449 @@
+.addingTest {
+    margin-bottom: 10%;
+}
+
+
+.addingTestModule {
+    margin: 60px 0;
+}
+
+p.scaleIntervalsP{
+    width: 90%;
+}
+
+.addingTest input[type = 'text'] {
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+    font-size: 14pt;
+    font-weight: normal;
+    color: #4A4A4A;
+
+    width: 80%;
+    padding: 10px;
+    margin: 2% 0;
+
+    border: none;
+    border-bottom: 3px solid #E6EBC3;
+
+    float: none;
+    outline: inherit;
+    resize: none;
+}
+
+.addingTest select {
+    margin-right: 2%;
+}
+
+.shortLinkBox {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 0 10px;
+    width: 80%;
+}
+
+.shortLinkBox input[type = 'text'] {
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+    font-size: 13pt;
+    font-weight: normal;
+    color: #000000;
+    margin-left: 10px;
+    border: none;
+    outline: inherit;
+    resize: none;
+}
+
+[type = 'number'] {
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+    font-size: 14pt;
+    font-weight: normal;
+    color: #4A4A4A;
+
+    width: 50%;
+    padding: 10px;
+    margin: 2% 0;
+
+    border: none;
+    background: #F1FAE2;
+
+    float: none;
+    outline: inherit;
+    resize: none;
+}
+
+[type = 'number']::placeholder {
+    color: #E0E7B4;
+}
+
+
+
+.addingTest textarea {
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+    font-size: 12pt;
+    font-weight: normal;
+    color: #4A4A4A;
+
+    width: 90%;
+    min-height: 200px;
+    padding: 1% 2%;
+    margin: 2% 0;
+
+    border: 0;
+    border-left: 3px solid #E6EBC3;
+
+    float: none;
+    outline: inherit;
+    resize: none;
+}
+
+.scales {
+    display: flex;
+    flex-direction: column;
+}
+
+.scaleBox {
+    display: grid;
+    grid-template-rows: auto auto 50px;
+    grid-template-columns: 0px 40% 60%;
+    margin-bottom: 50px;
+    border-left: 3px dotted #D6D6D6;
+}
+
+.scaleBox #scaleAnswers {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    padding: 3%;
+}
+
+.scaleBox .scaleAnswer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.scaleDeletingIcon {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: right;
+    margin: 15px 0 0 -30px;
+}
+
+.scale {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.intervals {
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.interval {
+    display: grid;
+    grid-template-columns: 20px 50% 50%;
+    grid-template-rows: auto auto auto auto auto auto 50px;
+    margin-bottom: 70px;
+    grid-row-gap: 20px;
+    border-bottom: 3px dotted #D6D6D6;
+}
+
+.inactiveImportantBtn, .activeImportantBtn {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 5%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.inactiveImportantBtn:hover, .activeImportantBtn:hover {
+    transform: scale(1.1);
+}
+
+.inactiveImportantBtn {
+    background: #EAEAEA;
+    box-shadow: 4px 4px 5px 0px rgba(181, 181, 181, 0.2),
+    -4px 4px 20px 0px rgba(255, 255, 255, 0.3),
+    inset -3px -3px 5px 0px rgba(181, 181, 181, 0.5),
+    inset 3px 3px 5px 0px rgba(255, 255, 255, 0.5);
+}
+
+.activeImportantBtn {
+    background: #E6EBC3;
+    box-shadow: 4px 4px 5px 0px rgba(181, 181, 181, 0.2),
+    -4px 4px 20px 0px rgba(255, 255, 255, 0.3),
+    inset -3px -3px 5px 0px rgba(212, 219, 171, 0.5),
+    inset 3px 3px 5px 0px rgba(255, 255, 255, 0.5);
+}
+
+.inactiveImportantBtn p, .activeImportantBtn p {
+    font-size: 10pt;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+
+
+.questionIsNotChecked, .questionIsChecked {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 2%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.questionIsNotChecked:hover, .questionIsChecked:hover {
+    transform: scale(1.1);
+}
+
+.questionIsNotChecked {
+    background: #EAEAEA;
+    box-shadow: 4px 4px 5px 0px rgba(181, 181, 181, 0.2),
+    -4px 4px 20px 0px rgba(255, 255, 255, 0.3),
+    inset -3px -3px 5px 0px rgba(181, 181, 181, 0.5),
+    inset 3px 3px 5px 0px rgba(255, 255, 255, 0.5);
+}
+
+.questionIsChecked {
+    background: #E6EBC3;
+    box-shadow: 4px 4px 5px 0px rgba(181, 181, 181, 0.2),
+    -4px 4px 20px 0px rgba(255, 255, 255, 0.3),
+    inset -3px -3px 5px 0px rgba(212, 219, 171, 0.5),
+    inset 3px 3px 5px 0px rgba(255, 255, 255, 0.5);
+}
+
+.questionIsNotChecked p, .questionIsChecked p {
+    font-size: 10pt;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.intervalName {
+    grid-column: 2 / span 3;
+    grid-row: 1;
+}
+
+.intervalP {
+    grid-column: 2 / span 3;
+    grid-row: 2;
+}
+
+.isImportantYesContainer, .isImportantNoContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.isImportantYesContainer {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.isImportantNoContainer {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.intervalDescription{
+    grid-column: 2 / span 3;
+    grid-row: 4;
+}
+
+.intervalP2 {
+    grid-column: 2 / span 3;
+    grid-row: 5;
+}
+
+.intervalMin, .intervalMax {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    justify-self: center;
+}
+
+.intervalMin.intervalMax input[type = 'number'] {
+    width: 60%;
+}
+
+.intervalMin{
+    grid-column: 2;
+    grid-row: 6;
+}
+.intervalMax{
+    grid-column: 3;
+    grid-row: 6
+}
+
+.intervalDeletingIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 15px 0 0-30px;
+}
+
+.questionAdd {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.questionAdd p {
+    color: #D6D6D6;
+    margin: auto 20px auto -20px;
+}
+
+.savebtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.savetestbtn, .savedraftbtn, .deletetestbtn {
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.savetestbtn:hover, .savedraftbtn:hover, .deletetestbtn:hover {
+    width: 170px;
+    transform: scale(1.1);
+}
+
+.savetestbtn {
+    background: #E6EBC3;
+    box-shadow: 4px 4px 5px 0px rgba(181, 181, 181, 0.2),
+    -4px 4px 20px 0px rgba(255, 255, 255, 0.3),
+    inset -3px -3px 5px 0px rgba(212, 219, 171, 0.5),
+    inset 3px 3px 5px 0px rgba(255, 255, 255, 0.5);
+    position: fixed;
+    bottom: 45%;
+    right: -30px;
+}
+
+.savedraftbtn {
+    background: #EAEAEA;
+    box-shadow: 4px 4px 5px 0px rgba(181, 181, 181, 0.2),
+    -4px 4px 20px 0px rgba(255, 255, 255, 0.3),
+    inset -3px -3px 5px 0px rgba(181, 181, 181, 0.2),
+    inset 3px 3px 5px 0px rgba(255, 255, 255, 0.5);
+    position: fixed;
+    bottom: 35%;
+    right: -30px;
+}
+
+.deletetestbtn {
+    background: #E88732;
+    box-shadow: 4px 4px 5px 0px rgba(181, 181, 181, 0.2),
+    -4px 4px 20px 0px rgba(255, 255, 255, 0.3),
+    inset -3px -3px 5px 0px rgba(232, 135, 50, 0.2),
+    inset 3px 3px 5px 0px rgba(255, 255, 255, 0.5);
+    position: fixed;
+    bottom: 25%;
+    right: -30px;
+}
+
+.savetestbtn:hover {
+    box-shadow: 4px 8px 5px 0px rgba(181, 181, 181, 0.2),
+    -4px 4px 20px 0px rgba(255, 255, 255, 0.3),
+    inset -3px -3px 5px 0px rgba(181, 181, 181, 0.2),
+    inset 3px 3px 5px 0px rgba(255, 255, 255, 0.5);
+}
+
+.savedraftbtn:hover {
+    box-shadow: 4px 8px 5px 0px rgba(181, 181, 181, 0.2),
+    -4px 4px 20px 0px rgba(255, 255, 255, 0.3),
+    inset -3px -3px 5px 0px rgba(181, 181, 181, 0.2),
+    inset 3px 3px 5px 0px rgba(255, 255, 255, 0.5);
+}
+
+.deletetestbtn:hover {
+    box-shadow: 4px 8px 5px 0px rgba(181, 181, 181, 0.2),
+    -4px 4px 20px 0px rgba(255, 255, 255, 0.3),
+    inset -3px -3px 5px 0px rgba(232, 135, 50, 0.2),
+    inset 3px 3px 5px 0px rgba(255, 255, 255, 0.5);
+}
+
+.savetestbtn p, .savedraftbtn p, .deletetestbtn p {
+    font-size: 10pt;
+    display: inline;
+
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+.addingTest input[type = 'text']::placeholder, textarea::placeholder {
+    color: #d6d6d6;
+}
+
+.activeText {
+    color: #4A4A4A;
+}
+
+.inactiveText {
+    color: #D6D6D6;
+}
+
+.adding {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    width: 90%;
+}
+
+.adding p {
+    margin-left: 10px;
+}
+
+.adding p:hover {
+    transform: scale(1.05);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.inputWithError {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.error {
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+    font-size: 9pt;
+    margin: 2px 0;
+    text-align: center;
+    color: #E88732;
+    display: none;
+}

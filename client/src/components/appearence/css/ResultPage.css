@@ -1,0 +1,40 @@
+.resultPage h1 {
+    font-size: 25pt;
+    width: 80%;
+    margin: 0 0 2% 0;
+    color: #4A4A4A;
+}
+
+.resultPage h2 {
+    font-size: 20pt;
+}
+.resultPage .extra h2 {
+    color: #E88732;
+}
+
+.resultPage .normal h2 {
+    color: #E0E7B4;
+}
+
+.resultPage h3 {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.resultModule {
+    margin: 8% 0;
+}
+
+.pointsScale {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    width: 80%;
+    height: 30px;
+    background: #F6F6F6;
+}
+
+.resultModule p {
+    margin: 5%;
+    width: 70%;
+}
